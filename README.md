@@ -1,4 +1,4 @@
-# ADC Portal
+# My Portal
 
 A lightweight, web-based dashboard designed to provide quick access to essential resources for the ADC, Math, IT Admin, and PC teams.
 
@@ -17,7 +17,7 @@ A lightweight, web-based dashboard designed to provide quick access to essential
 2. **Math:** Placeholder buttons for math-related resources.
 3. **IT Admin:** Direct link to the Student Portfolio spreadsheet.
 4. **PC Team:** Direct link to the Cell Phone Lock Up tracking sheet.
-5. **Footer:** Quick access to the Master Spreadsheet.
+5. **Footer:** Quick access to the Links of documents 2025-26.
 
 ## 🔧 Deployment
 To host this yourself:
