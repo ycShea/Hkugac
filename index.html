@@ -5,37 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADC Portal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body { padding: 40px; background-color: #f8f9fa; }
-        .section { margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h2 { color: #0d6efd; border-bottom: 2px solid #e9ecef; padding-bottom: 10px; }
-        .btn { margin-right: 10px; margin-bottom: 10px; }
+        .section { margin-bottom: 20px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* Making the header clickable */
+        .section-header { 
+            color: #0d6efd; 
+            border-bottom: 2px solid #e9ecef; 
+            padding-bottom: 10px; 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        
+        .btn { margin-right: 10px; margin-top: 15px; }
         footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #dee2e6; text-align: center; }
+        
+        /* Animation for the triangle */
+        .collapsed .toggle-icon { transform: rotate(-90deg); }
+        .toggle-icon { transition: transform 0.3s; font-size: 0.8em; }
     </style>
 </head>
 <body>
 
     <div class="container">
+        
         <div class="section">
-            <h2>ADC</h2>
-            <a href="https://drive.google.com/drive/folders/1nnFpe1lVZGaGUkqy59yIfxOqnxpnrCmG" class="btn btn-primary" target="_blank">Go to Google Drive</a>
+            <h2 class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseADC">
+                ADC <span class="toggle-icon">▼</span>
+            </h2>
+            <div id="collapseADC" class="collapse">
+                <a href="https://drive.google.com/drive/folders/1nnFpe1lVZGaGUkqy59yIfxOqnxpnrCmG" class="btn btn-primary" target="_blank">Go to Google Drive</a>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Math</h2>
-            <a href="https://docs.google.com/spreadsheets/d/1JYobVZl-nAiTXjeS_ErkdarXTVFL27CyEWHNpmEK29g/edit?gid=748581851#gid=748581851" class="btn btn-outline-secondary">S6 Student Data Analysis</a>
-            <a href="#" class="btn btn-outline-secondary">Math Button 2</a>
-            <a href="#" class="btn btn-outline-secondary">Math Button 3</a>
+            <h2 class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseMath">
+                Math <span class="toggle-icon">▼</span>
+            </h2>
+            <div id="collapseMath" class="collapse">
+                <a href="https://docs.google.com/spreadsheets/d/1JYobVZl-nAiTXjeS_ErkdarXTVFL27CyEWHNpmEK29g/edit?gid=748581851#gid=748581851" class="btn btn-outline-secondary" target="_blank">S6 Student Data Analysis</a>
+                <a href="#" class="btn btn-outline-secondary">Math Button 2</a>
+                <a href="#" class="btn btn-outline-secondary">Math Button 3</a>
+            </div>
         </div>
 
         <div class="section">
-            <h2>IT Admin</h2>
-            <a href="https://docs.google.com/spreadsheets/d/1hxNk2_gJjrat3WY8IXhrLbcnnnVVFbP8f06tp4LMzOg/edit?gid=0&authuser=0" class="btn btn-success" target="_blank">Student Portfolio</a>
+            <h2 class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseIT">
+                IT Admin <span class="toggle-icon">▼</span>
+            </h2>
+            <div id="collapseIT" class="collapse">
+                <a href="https://docs.google.com/spreadsheets/d/1hxNk2_gJjrat3WY8IXhrLbcnnnVVFbP8f06tp4LMzOg/edit?gid=0&authuser=0" class="btn btn-success" target="_blank">Student Portfolio</a>
+            </div>
         </div>
 
         <div class="section">
-            <h2>PC Team</h2>
-            <a href="https://docs.google.com/spreadsheets/d/1GznvxS6_X_tnsfnCqKaXtLE8Y829UxOFiKeNQmRWEvY/edit?gid=788473237#gid=788473237" class="btn btn-danger" target="_blank">Cell Phone Lock Up</a>
+            <h2 class="section-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePC">
+                PC Team <span class="toggle-icon">▼</span>
+            </h2>
+            <div id="collapsePC" class="collapse">
+                <a href="https://docs.google.com/spreadsheets/d/1GznvxS6_X_tnsfnCqKaXtLE8Y829UxOFiKeNQmRWEvY/edit?gid=788473237#gid=788473237" class="btn btn-danger" target="_blank">Cell Phone Lock Up</a>
+            </div>
         </div>
 
         <footer>
